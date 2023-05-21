@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Josefin+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Roboto&display=swap');
+
 
 :root {
     --bg-size: 100% 100%;
     --main_color: #fff;
-    --title: 'Josefin Sans', sans-serif;
-    --font-para: 'David Libre', serif;
+    --title: 'Montserrat', sans-serif;
+    --font-para: 'Montserrat', sans-serif;
     --btn-color: #bbe1fa;
     --btn-font-color: #000;
     --btn-font: 1.5rem;
@@ -24,7 +25,7 @@ html {
 p,
 label,
 input::placeholder {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     line-height: 170%;
     color: #6c757d;
 }
@@ -284,7 +285,7 @@ figure img:hover,
 /*right sdie div style start*/
 .about_me_div {
     width: auto;
-    height: 58vh;
+    height: 60vh;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
