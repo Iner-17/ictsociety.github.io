@@ -46,28 +46,41 @@ body {
     background: #FFF8D6;
 }
 
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 15px;
+    bottom: 15px;
+    z-index: 1;
+}
+
+
+
 .main_heading {
     font-family: var(--title);
     font-weight: bold;
-    font-size: 5rem;
+    font-size: 5.5rem;
     color: #617A55;
     text-align: center;
 }
 
 .main_heading__para {
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     text-align: center;
 }
 
 .main_header__div {
-    height: calc(100vh - 40vh);
+    height: 70vh;
+    width: 100%;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
     background-size: var(--bg-size);
 }
 
 .main_header__div p {
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-family: var(--title);
     color: #A4D0A4;
     padding-bottom: 1rem;
@@ -83,8 +96,13 @@ body {
     transition: var(--eff);
 }
 
+.sticktogether {
+    margin-bottom: -10px;
+}
+
 .main_header__div span {
     font-family: var(--title);
+    font-size: 5rem;
 }
 
 .animateWord div {
@@ -217,11 +235,19 @@ figure img:hover,
     box-shadow: 0 1rem 3rem -1rem rgba(255, 255, 255, 0.7);
 }
 
+.text-capitalized {
+    color: #6c757d;
+}
+
+.card {
+    border-radius: 10px;
+}
+
 /*left side vblog stykle start*/
 .blog_left__div h1 {
     font-family: var(--title);
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 5rem;
     text-align: center;
 }
 
@@ -269,6 +295,12 @@ figure img:hover,
     border: none;
 }
 
+
+.bg-white {
+    border-radius: 50%;
+    padding-left: 10px;
+}
+
 .replies {
     margin: 2rem 0;
     padding: 1rem 0;
@@ -283,6 +315,8 @@ figure img:hover,
 }
 
 /*right sdie div style start*/
+
+
 .about_me_div {
     width: auto;
     height: 60vh;
@@ -291,7 +325,12 @@ figure img:hover,
     align-items: flex-start;
     flex-direction: column;
     background-image: linear-gradient(to bottom, transparent 5%, rgba(255, 255, 255, 0.8) 50%), url('../images/thapa.jpg');
+    border-radius: 10px;
     /* background-size: var(--bg-size); */
+}
+
+.right_div__title {
+    border-radius: 10px 10px 0 0;
 }
 
 .about_me_div p:first-child {
@@ -299,11 +338,21 @@ figure img:hover,
     font-size: 2.2rem;
 }
 
-.about_me_div p {
-    font-size: 1.8rem;
+
+.about_me_div .notabout {
+    font-size: 1.4rem;
     padding-bottom: 1rem;
     color: #000;
+    
 }
+
+.about_me_div .about {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: #000;
+    
+}
+
 
 .right_div__title {
     background: #A4D0A4;
@@ -338,6 +387,7 @@ figure img:hover,
 .right_sub__div {
     background: #fff;
     padding: 2.5rem 1rem;
+    border-radius: 0 0 10px 10px;
 }
 
 .right_sub__div .row {
@@ -362,7 +412,7 @@ figure img:hover,
 }
 
 .tags_main a {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     line-height: 170%;
     font-weight: lighter;
     background: #617A55;
@@ -416,7 +466,10 @@ footer p {
     padding-bottom: 0;
 }
 
+
+
 /*responsive code start*/
+
 @media(max-width:998px) {
     html {
         font-size: 60%;
@@ -424,6 +477,10 @@ footer p {
 
     .left_div_blog {
         margin: 3rem 0;
+    }
+
+    #sariling_mundo {
+        font-size: 4.5rem;
     }
 
     p,
@@ -450,4 +507,21 @@ footer p {
     .left_div_blog {
         margin: 3rem 0;
     }
+
+    .main_header__div p {
+        font-size: 6rem;
+        
+    }
+
+    .main_header__div span {
+        font-size: 2.9rem;
+    }
+    
+    .main_header__div {
+        height: 50vh;
+        width: 100%;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+        background-size: var(--bg-size);
+    }
+
 }
